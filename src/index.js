@@ -1,12 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import Jumbotron from './components/Jumbotron';
+import Layout from './components/Layout';
+import Table from './components/Table';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Navbar />
+    <Jumbotron />
+    <Layout />
+    <Table />
+    <Footer />
   </React.StrictMode>,
   document.getElementById('root')
 );
