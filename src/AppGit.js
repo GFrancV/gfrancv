@@ -1,22 +1,38 @@
-import React, { Component } from "react";
+import React, { useEffect, useState } from "react";
+import Table from "./components/Table";
+import getProjects from "./services/getProjects";
 
-class AppGit extends Component{
-    queryApi = () => {
-        const url = "https://api.github.com/users/gfrancv/repos"
-        fetch(url)
-            .then(respuesta => respuesta.json())
-    }
+function AppGit() {
+	const [projects, setProjects] = useState([]);
 
-    render() {
-        return(
-            <div className="container text-center">
-            <div className="container-rep">
-                <a ref={ this.queryApi }></a>
-            </div>
-            <p className="text">Hola</p>
-        </div>
-        );
-    }
+	useEffect(function () {
+		getProjects().then((projects) => setProjects(projects));
+	}, []);
+
+	return (
+		<div className="container">
+            <h2 className="title">  Table of Projects </h2>
+			<table className="table table-hover table-active">
+				<thead>
+					<th scope="col">#</th>
+					<th scope="col">Name</th>
+					<th scope="col">Description</th>
+                    <th scope="col">URL</th>
+				</thead>
+				<tbody>
+					{projects.map(projects => 
+                    <Table 
+                        key={projects.id}
+                        id={projects.id} 
+                        full_name={projects.full_name} 
+                        description={projects.description} 
+                        url={projects.html_url}
+                    />
+                    )}
+				</tbody>
+			</table>
+		</div>
+	);
 }
 
 export default AppGit;

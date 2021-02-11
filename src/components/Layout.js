@@ -1,13 +1,14 @@
 function Layout() {
-    return(
-        <div className="container">
-            <br />
-            <h2 className="title">What is Lorem Ipsum?</h2>
-            <p className="text">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-            </p>
-        </div>
-    );
+	return (
+		<div className="container">
+			<br />
+			<h2 className="title">Who I am?</h2>
+			<p className="text">
+				I'm Gabriel Villa a student of systems engineering and junior developer web, my nick is
+				GFrancV and this is my project portfolio.
+			</p>
+		</div>
+	);
 }
 
 export default Layout;

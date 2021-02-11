@@ -15,9 +15,6 @@ ReactDOM.render(
     <Navbar />
     <Jumbotron />
     <Layout />
-    <Table 
-      title="Table of projects"
-    />
     <App />
     <Footer />
   </React.StrictMode>,
