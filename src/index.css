@@ -13,10 +13,18 @@ code {
     monospace;
 }
 
+.title {
+  font-family: 'Inconsolata', monospace;
+}
+
+.text {
+  font-family: 'Noto Serif', serif;
+}
+
 .banner {
   position: relative;
   width: 100%;
-  height: calc(100vh - 90px);
+  height: calc(100vh - 56px);
   background-color: #f5f5f5;
   background-size: cover;
   background-position: center;

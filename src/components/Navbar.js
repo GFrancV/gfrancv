@@ -2,8 +2,8 @@ import logo from '../images/Logo.jpg';
 
 function Navbar() {
     return(
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a className="navbar-brand">
+        <nav className="title navbar navbar-expand-lg navbar-dark bg-dark">
+            <a className="navbar-brand" href="#">
                 <img src={logo} alt="logo" width="30" height="30" alt=""
                     className="rounded-circle align-top " />
                 GFrancV

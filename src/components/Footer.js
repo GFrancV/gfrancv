@@ -1,8 +1,14 @@
+import iconGit from '../images/github.png'
+
 function Footer() {
     return(
         <footer className="footer-style text-lg-start bg-dark">
-            <div className="text-center p-3">
+            <div className="container">
+            <div className="text-right p-3">
+                <a href="https://github.com/GFrancV"><img src= { iconGit } alt="GitHub" width="30px" /></a>
+                <p></p>
                 <p>©GFrancV Page</p>
+            </div>
             </div>
         </footer>
     )

@@ -8,13 +8,17 @@ import Footer from './components/Footer';
 import Jumbotron from './components/Jumbotron';
 import Layout from './components/Layout';
 import Table from './components/Table';
+import App from './AppGit';
 
 ReactDOM.render(
   <React.StrictMode>
     <Navbar />
     <Jumbotron />
     <Layout />
-    <Table />
+    <Table 
+      title="Table of projects"
+    />
+    <App />
     <Footer />
   </React.StrictMode>,
   document.getElementById('root')
